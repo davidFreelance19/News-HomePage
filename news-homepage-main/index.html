@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles/custom.css">
+  <title>Frontend Mentor | News homepage</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 13px; text-align: center ; margin-top: 2rem;}
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+  </style>
+</head>
+<body>
+
+  <div class="container grid w-11/12 md:w-3/4 mx-auto my-0 pt-6">
+    <nav class="nav flex-col md:flex-row flex items-center justify-between">
+        <div class="nav__logo flex justify-between w-full">
+          <img src="./assets/images/logo.svg" alt="logo">
+          <img src="./assets/images/icon-menu.svg" alt="icon-hamburger" class="md:invisible">
+        </div>
+        <div class="invisible md:visible flex items-center gap-8">
+          <a href="#" class="link">Home</a>
+          <a href="#" class="link">New</a>
+          <a href="#" class="link">Popular</a>
+          <a href="#" class="link">Trending</a>
+          <a href="#" class="link">Categories</a>
+        </div>
+    </nav>
+    <main class="main grid">
+      <section class="hero grid">
+        <div class="hero__img h-full bg-no-repeat	bg-center bg-cover  md:bg-[url('./assets/images/image-web-3-desktop.jpg')] bg-[url('./assets/images/image-web-3-mobile.jpg')]"></div>
+        <div class="hero__heading pt-5">
+             <h1 class="font-extrabold text-5xl">The Bright Future of Web 3.0?</h1>
+             <div class="hero__info-principal  mt-4">
+              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?</p>
+                <div class="py-2 font-bold text-white w-1/2 md:mt-4 uppercase"><p class="tracking-widest text-center">read more</p></div>
+              </div>
+        </div>
+      </section>
+      <div class="flex items-center md:items-start">  
+        <section class="news grid py-6">
+          <article class="entrada w-11/12 mx-auto my-0 entrada-new">
+            <h2 class="font-bold text-4xl md:text-2xl pb-6 md:pb-4">New</h2>
+            <div class="entrada__info border-b border-b-white	border-solid pb-6">
+              <h3 class="text-white font-bold text-2xl">Hydrogen VS Electric Cars</h3>
+              <p class="font-normal text-white text-md">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+          </article>
+          <article class="entrada w-11/12 mx-auto my-0">
+            <div class="entrada__info border-b border-b-white	border-solid pb-6">
+              <h3 class="text-white font-bold text-2xl">The Downsides of AI Artistry</h3>
+              <p class="font-normal text-white text-md">What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+          </article>
+          <article class="entrada w-11/12 mx-auto my-0">
+            <div class="entrada__info">
+              <h3 class="text-white font-bold text-2xl">Hydrogen VS Electric Cars</h3>
+              <p class="font-normal text-white text-md">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <div class="flex items-center">
+      <section class="top-news gap-7">
+        <div class="grid gap-5">
+          <div class="top__img bg-[url('./assets/images/image-retro-pcs.jpg')] bg-center bg-repeat bg-cover">
+          </div>
+          <div class="top__info">
+            <h2 class="font-extrabold text-xl">01</h2>
+            <h3 class="font-bold text-lg">Revviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div class="top__img bg-[url('./assets/images/image-top-laptops.jpg')] bg-center bg-repeat bg-cover">
+          </div>
+          <div class="top__info">
+            <h2 class="font-extrabold text-xl">02</h2>
+            <h3 class="font-bold text-lg">Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div class="top__img bg-[url('./assets/images/image-gaming-growth.jpg')] bg-center bg-repeat bg-cover">
+          </div>
+          <div class="top__info">
+            <h2 class="font-extrabold text-xl">03</h2>
+            <h3 class="font-bold text-lg">The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.instagram.com/dev_rodbd/">David Rodriguez Badillo</a>.
+  </div> 
+  </div>
+</body>
+</html>
